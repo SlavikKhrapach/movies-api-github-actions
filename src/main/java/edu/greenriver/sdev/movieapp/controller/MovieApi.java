@@ -31,7 +31,7 @@ public class MovieApi
     @GetMapping("all")
     public ResponseEntity<List<Movie>> all()
     {
-        return new ResponseEntity<>(service.all(), HttpStatus.OK);
+        return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
     @GetMapping("title/{title}")
